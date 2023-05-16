@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    min-height: 100vh;
+    background: #efeff2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculator{
+    width: 400px;
+    height: 650px;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
+    border-radius:20px ;
+    overflow: hidden;
+    background-image: url(./grey-apple-fabric-fiber-wallpaper-preview.jpg);
+    background-position: center;
+    background-size: cover;
+
+    
+}
+form input{
+    width: 90%;
+    height: 200px;
+    border: none;
+    border-radius: 12px;
+    font-size: 2rem;
+    padding: 1rem;
+    color: #ffffff;
+    background: #000000;
+    text-align: right;
+    pointer-events:none;
+    margin-left: 5%;
+    margin-top: 5%;
+    
+
+
+
+
+}
+button{
+    flex: 0 0 22%;
+    margin: 5px 0;
+    border: 1px solid;
+    width: 80px;
+    height: 70px;
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+   
+
+
+    
+}
+.button{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+.btn-yellow{
+    background: rgb(245, 146,62);
+    color: #fff;
+}
+.btn-equal{
+    background: green;
+}
+.btn-clear{
+    background: red;
+}
+button:hover{
+    background-color: #000;
+    box-shadow: 5px 10px rgba(0, 0, 0,0.2);
+    color: #fff;
+}
+/* .screen{
+    color: #ffffff;
+    background-color: #000;
+    
+} */
