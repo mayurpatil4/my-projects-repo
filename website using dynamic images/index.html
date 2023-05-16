@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Page Design</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="hero">
+      <div class="navbar">
+        <img src="./90cdeb260df361a39d97540d9c75a814.png" alt="" class="logo" />
+        <div class="user">
+          <button type="button">Explore</button>
+          <div id="radius"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="info">
+          <h1>DISCOVER</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+            inventore est at eligendi dolorem quidem quasi, voluptatum, modi
+            hic, corporis voluptatem. <br />Ex magni ad ullam labore blanditiis
+            voluptatibus modi quaerat.
+          </p>
+          <input type="text" placeholder="Search" />
+        </div>
+      </div>
+
+      <div class="slider">
+        <img
+          src="./Radiance_img/Radiance_img/left-arrow.png"
+          id="prev"
+          alt=""
+        />
+        <div class="preview">
+          <img src="./4k-3174729_1920.jpg" alt="" class="active thumbnail" />
+          <img src="./sunset-1373171_1920.jpg" alt="" class="thumbnail" />
+          <img
+            src="./Radiance_img/Radiance_img/bg1.png"
+            alt=""
+            class="thumbnail"
+          />
+          <img
+            src="./Radiance_img/Radiance_img/bg2.png"
+            alt=""
+            class="thumbnail"
+          />
+          <img
+            src="./Radiance_img/Radiance_img/bg3.png"
+            alt=""
+            class="thumbnail"
+          />
+        </div>
+        <img
+          src="./Radiance_img/Radiance_img/right-arrow.png"
+          alt=""
+          id="next"
+        />
+      </div>
+    </div>
+
+    <script>
+      var prev = document.getElementById("prev");
+      var next = document.getElementById("next");
+      var thumbnail = document.getElementsByClassName("thumbnail");
+      var hero = document.getElementById("hero");
+
+      var backgroundImg = new Array(
+        "4k-3174729_1920.jpg",
+        "sunset-1373171_1920.jpg",
+        "Radiance_img/Radiance_img/bg1.png",
+        "Radiance_img/Radiance_img/bg2.png",
+        "Radiance_img/Radiance_img/bg3.png"
+      );
+      let i = 0;
+      next.onclick = function () {
+        if (i < 4) {
+          hero.style.backgroundImage = 'url("' + backgroundImg[i + 1] + '")';
+          thumbnail[i + 1].classList.add("active");
+          thumbnail[i].classList.remove("active");
+          i++;
+        }
+      };
+
+      prev.onclick = function () {
+        if (i > 0) {
+          hero.style.backgroundImage = 'url("' + backgroundImg[i - 1] + '")';
+          thumbnail[i - 1].classList.add("active");
+          thumbnail[i].classList.remove("active");
+          i--;
+        }
+      };
+    </script>
+  </body>
+</html>

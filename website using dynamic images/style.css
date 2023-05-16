@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+#hero{
+    width: 100%;
+    height: 100vh;
+    background-image:url(./4k-3174729_1920.jpg) ;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+.navbar{
+    width: 90%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10;
+
+}
+.navbar .logo{
+    width: 13rem;
+    margin:3rem 0 0;
+    cursor: pointer;
+    
+    
+}
+.user{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    /* border-radius: 0.2rem; */
+}
+/* /* .user img{
+    width: 15rem;
+    margin-left: 5rem;
+    cursor: pointer; 
+} */
+#radius{
+    height: 4.5rem;
+    width: 4.5rem;
+    background-image: url(./WhatsApp\ Image\ 2023-05-07\ at\ 02.35.06.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 5rem;
+    cursor: pointer;
+    border-radius: 4cm;
+}
+button{
+    height: 4.4rem;
+    width: 11rem;
+    font-size: x-large;
+    /* padding:  8px 15px; */
+    background: transparent;
+    outline: none;
+    border: 0.25rem solid #fff;
+    border-radius: 2.5rem;
+    color: #fff;
+    /* font-size: 12px; */
+    font-weight: bold;
+    cursor: pointer;
+
+}
+.container{
+    width: 50%;
+    height: 100vh;
+    background: rgba(86, 86, 86, 0.3);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.info{
+    width: 70rem;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%);
+    
+}
+.info h1{
+    font-size: 5rem;
+    letter-spacing: 1rem;
+    
+}
+.info p{
+    color: #f0eef1;
+    font-size: 1.7rem;
+    margin: 2.0rem 0;
+    line-height: 3.5rem;
+}
+.info input{
+    width: 60%;
+    
+    padding: 0.9rem 1.2rem;
+    outline: none;
+    border: 0.2rem solid white;
+    border-radius: 4rem;
+    background: transparent;
+    color: #fff;
+    font-size: 2.5rem;
+
+}
+::placeholder{
+    color: #ccc;
+}
+
+.slider{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 30px;
+    bottom: 50px;
+}
+#prev, #next{
+    width:5rem;
+    cursor: pointer;
+}
+.preview{
+    display: flex;
+    align-items: center;
+    margin: 0 60px;
+}
+.preview img{
+    width: 13rem;
+    margin: 0 10px;
+    opacity: 0.4;
+}
+.preview .active{
+    display: block;
+    border: 0.28rem solid #fff;
+    width: 14rem;
+    opacity: 1;
+}
+button:hover{
+    color: white;
+    background-color: black;
+    border: black;
+}
+/* .preview img:hover{
+    border: 3px solid white;
+    opacity: none;
+} */
